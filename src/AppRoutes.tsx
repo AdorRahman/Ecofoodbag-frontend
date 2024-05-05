@@ -7,6 +7,7 @@ import ProtectedRoute from "./auth/ProtectedRoute";
 import ManageRestaurantPage from "./pages/ManageRestaurantPage";
 import SearchPage from "./pages/SearchPage";
 import DetailPage from "./pages/DetailPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const AppRoutes = () => {
 	return (
@@ -16,6 +17,14 @@ const AppRoutes = () => {
 				element={
 					<Layout showHero>
 						<HomePage />
+					</Layout>
+				}
+			/>
+			<Route
+				path='/Privacy-Policy'
+				element={
+					<Layout>
+						<PrivacyPolicy />
 					</Layout>
 				}
 			/>

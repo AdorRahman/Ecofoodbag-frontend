@@ -6,8 +6,12 @@ const Footer = () => {
 					Ecofoodbag.com
 				</span>
 				<span className='flex gap-4 font-bold tracking-tight text-white'>
-					<span>Privacy Policy</span>
-					<span>Terms of Service</span>
+					<a href='/Privacy-Policy'>
+						<span>Privacy Policy</span>
+					</a>
+					<a href='/Terms-of-Service'>
+						<span>Terms of Service</span>
+					</a>
 				</span>
 			</div>
 		</div>
