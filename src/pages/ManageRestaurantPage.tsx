@@ -1,9 +1,10 @@
 import {
 	useCreateMyRestaurant,
 	useGetMyRestaurant,
+	useGetMyRestaurantOrders,
 	useUpdateMyRestaurant,
 } from "@/api/MyRestaurantApi";
-
+import OrderItemCard from "@/components/OrderItemCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ManageRestaurantForm from "@/forms/managr-restaurant-form/ManageRestaurantForm";
 
@@ -13,6 +14,8 @@ const ManageRestaurantPage = () => {
 	const { restaurant } = useGetMyRestaurant();
 	const { updateRestaurant, isLoading: isUpdateLoading } =
 		useUpdateMyRestaurant();
+
+	const { orders } = useGetMyRestaurantOrders();
 
 	const isEditing = !!restaurant;
 
@@ -25,7 +28,10 @@ const ManageRestaurantPage = () => {
 			<TabsContent
 				value='orders'
 				className='p-10 space-y-5 rounded-lg bg-gray-50'>
-				<h2 className='text-2xl font-bold'>0 active orders</h2>
+				<h2 className='text-2xl font-bold'>{orders?.length} active orders</h2>
+				{orders?.map((order) => (
+					<OrderItemCard order={order} />
+				))}
 			</TabsContent>
 			<TabsContent value='manage-restaurant'>
 				<ManageRestaurantForm
