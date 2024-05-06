@@ -20,7 +20,7 @@ const OrderStatusDetail = ({ order }: Props) => {
 				<ul>
 					{order.cartItems.map((item) => (
 						<li>
-							{item.name} x {item.quantity}
+							{item.name} * {item.quantity}
 						</li>
 					))}
 				</ul>
