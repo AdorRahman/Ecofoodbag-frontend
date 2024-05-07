@@ -9,6 +9,7 @@ import SearchPage from "./pages/SearchPage";
 import DetailPage from "./pages/DetailPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OrderStatusPage from "./pages/OrderStatusPage";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 const AppRoutes = () => {
 	return (
@@ -26,6 +27,14 @@ const AppRoutes = () => {
 				element={
 					<Layout>
 						<PrivacyPolicy />
+					</Layout>
+				}
+			/>
+			<Route
+				path='/Terms-and-Conditions'
+				element={
+					<Layout>
+						<TermsAndConditions />
 					</Layout>
 				}
 			/>

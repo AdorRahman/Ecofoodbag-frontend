@@ -9,7 +9,7 @@ const Footer = () => {
 					<a href='/Privacy-Policy'>
 						<span>Privacy Policy</span>
 					</a>
-					<a href='/Terms-of-Service'>
+					<a href='/Terms-and-Conditions'>
 						<span>Terms of Service</span>
 					</a>
 				</span>
