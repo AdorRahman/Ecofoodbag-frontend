@@ -18,7 +18,7 @@ const HomePage = () => {
 				<h1 className='text-5xl font-bold tracking-tight text-green-600'>
 					Join us in reducing carbon emissions!
 				</h1>
-				<span className='text-xl'>Eco Foos is just a click away!</span>
+				<span className='text-xl'>Ecofoodbag is just a click away!</span>
 				<SearchBar
 					placeHolder='Search by City or Town'
 					onSubmit={handleSearchSubmit}
@@ -30,7 +30,7 @@ const HomePage = () => {
 					<span className='text-3xl font-bold tracking-tighter'>
 						Order takeaway even faster!
 					</span>
-					<span>Eco Foos is just a click away!</span>
+					<span>Ecofoodbag is just a click away!</span>
 					<img src={appDownloadImage} />
 				</div>
 			</div>
