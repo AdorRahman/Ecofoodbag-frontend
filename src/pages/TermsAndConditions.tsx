@@ -167,7 +167,9 @@ const TermsAndConditions = () => {
 						loss or damage of any nature.
 					</p>
 				</div>
-
+				<br />
+				<p className='mt-6'>---</p>
+				<br />
 				<p className='mt-6 text-sm'>
 					These terms and conditions are subject to change without notice. By
 					using this website, you agree to review these terms regularly and be
