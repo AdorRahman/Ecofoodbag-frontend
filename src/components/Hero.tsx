@@ -25,17 +25,26 @@ const Hero = () => {
 		fetchData();
 	}, []);
 
+	// Conversion factor: 1 total carbon saved = 2.5 kg carbon
+	const totalCarbonSavedKg = total * 2.5;
+
 	return (
 		<div>
-			<img src={hero} className='w-full max-h-[600px] object-cover' />
-			<div className=' fixed md:absolute bottom-4 right-4 shadow-lg  md:bottom-auto md:top-[20rem] md:right-[10rem] leading-none text-center p-2 md:p-6 rounded-lg text-sm md:text-lg text-white font-semibold bg-[#39B54A] '>
-				<img src={icon} className='absolute left-10 -top-14' alt='icon' />
+			<img
+				src={hero}
+				className='w-full max-h-[600px] object-cover'
+				alt='Hero Image'
+			/>
+			<div className='fixed md:absolute bottom-4 right-4 shadow-lg md:bottom-auto md:top-[20rem] md:right-[10rem] leading-none text-center p-2 md:p-6 rounded-lg text-sm md:text-lg text-white font-semibold bg-[#39B54A]'>
+				<img src={icon} className='absolute left-10 -top-14' alt='Icon' />
 				<div>
 					Together, we've saved <br />
-					<span className=' font-black text-lg md:text-2xl text-[#8EFF9E]'>
-						{isLoading ? "..." : `${total}`} Tons
+					<span className='font-black text-lg md:text-2xl text-[#8EFF9E]'>
+						{isLoading ? "..." : `${totalCarbonSavedKg}`} KG
 					</span>{" "}
-					of carbon <br /> Thanks!
+					of carbon
+					<br />
+					emissions Thanks!
 				</div>
 			</div>
 		</div>
