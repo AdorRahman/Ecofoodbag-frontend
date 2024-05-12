@@ -6,10 +6,10 @@ const Footer = () => {
 					Ecofoodbag.com
 				</span>
 				<span className='flex flex-col gap-4 py-6 font-bold tracking-tight text-white lg:py-0 md:flex-row'>
-					<a href='/Privacy-Policy'>
+					<a href='/privacy-policy'>
 						<span>Privacy Policy</span>
 					</a>
-					<a href='/Terms-and-Conditions'>
+					<a href='/terms-and-conditions'>
 						<span>Terms of Service</span>
 					</a>
 				</span>
